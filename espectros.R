@@ -1,0 +1,128 @@
+                                                  ############################
+			                          ##         Furfural       ##
+			                          ############################
+pdf(file = "espectros_furppm.pdf", width = 8, height = 10)
+fur <- read.table("/Users/User/Desktop/MATLAB/fu1.txt", header=FALSE, sep="", na.strings="NA", dec=".", strip.white=TRUE); fur
+plot(fur[,1],fur[,2]-fur[81,2],xaxs="i", xaxp=c(245, 325, 8),ylim=c(0.06,1.8),type='l',col="green",xlab="",ylab="", lwd=3)
+points(fur[,1],fur[,3]-fur[81,3],type='l',col="green", lwd=3)
+points(fur[,1],fur[,4]-fur[81,4],type='l',col="green", lwd=3)
+points(fur[,1],fur[,5]-fur[81,5],type='l',col="green", lwd=3)
+points(fur[,1],fur[,6]-fur[81,6],type='l',col="green", lwd=3)
+points(fur[,1],fur[,7]-fur[81,7],type='l',col="green", lwd=3)
+points(fur[,1],fur[,8]-fur[81,8],type='l',col="green", lwd=3)
+points(fur[,1],fur[,9]-fur[81,9],type='l',col="green", lwd=3)
+points(fur[,1],fur[,10]-fur[81,10],type='l',col="green", lwd=3)
+points(fur[,1],fur[,11]-fur[81,11],type='l',col="green", lwd=3)
+title(main="Concentration Spectra of Furfural",xlab="Wavelenght (nm)",ylab="Absortion (ua)",font.main=2,font.lab=2,cex.main=1.5)
+legend(293,1.8, "concentrations of Furfural",  pt.bg = "white", lty = 1, col = "green")
+text(277, max(fur[,2]+0.02), "1 ppm ", col = "purple")
+text(277, max(fur[,3]+0.02), "2 ppm ", col = "purple")
+text(277, max(fur[,4]+0.02), "3 ppm ", col = "purple")
+text(277, max(fur[,5]+0.02), "4 ppm ", col = "purple")
+text(277, max(fur[,6]+0.02), "5 ppm ", col = "purple")
+text(277, max(fur[,7]+0.02), "6 ppm ", col = "purple")
+text(277, max(fur[,8]+0.02), "7 ppm ", col = "purple")
+text(277, max(fur[,9]+0.02), "8 ppm ", col = "purple")
+text(277, max(fur[,10]+0.02), "9 ppm ", col = "purple")
+text(277, max(fur[,11]+0.02), "10 ppm ", col = "purple")
+points(277, max(fur[,2]-fur[81,2]), pch=3, col="red", lwd=1)
+points(277, max(fur[,3]-fur[81,3]), pch=3, col="red", lwd=1)
+points(277, max(fur[,4]-fur[81,4]), pch=3, col="red", lwd=1)
+points(277, max(fur[,5]-fur[81,5]), pch=3, col="red", lwd=1)
+points(277, max(fur[,6]-fur[81,6]), pch=3, col="red", lwd=1)
+points(277, max(fur[,7]-fur[81,7]), pch=3, col="red", lwd=1)
+points(277, max(fur[,8]-fur[81,8]), pch=3, col="red", lwd=1)
+points(277, max(fur[,9]-fur[81,9]), pch=3, col="red", lwd=1)
+points(277, max(fur[,10]-fur[81,10]), pch=3, col="red", lwd=1)
+points(277, max(fur[,11]-fur[81,11]), pch=3, col="red", lwd=1)
+dev.off()
+
+
+                                                  ############################
+			                          ##   2 ACETIL  FURFURAL   ##
+			                          ############################
+			                          
+pdf(file = "espectros_2afppm.pdf", width = 8, height = 10)
+af2 <- read.table("/Users/User/Desktop/MATLAB/2af.txt", header=FALSE, sep="", na.strings="NA", dec=".", strip.white=TRUE); af2
+plot(af2[,1],af2[,2]-af2[81,2],xaxs="i", xaxp=c(245, 325, 8),ylim=c(0.038,1.05),type='l',col="blue",xlab="",ylab="", lwd=3)
+points(af2[,1],af2[,3]-af2[81,3],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,4]-af2[81,4],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,5]-af2[81,5],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,6]-af2[81,6],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,7]-af2[81,7],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,8]-af2[81,8],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,9]-af2[81,9],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,10]-af2[81,10],type='l',col="blue", lwd=3)
+points(af2[,1],af2[,11]-af2[81,11],type='l',col="blue", lwd=3)
+title(main="Concentration Spectra of 2 Acetyl Furfural",xlab="Wavelenght (nm)",ylab="Absortion (ua)",font.main=2,font.lab=2,cex.main=1.5)
+legend(285,1.05, "Concentrations of 2 Acetyl Furfural",  pt.bg = "white", lty = 1, col = "blue")
+text(274, max(af2[,2]+0.04), "1 ppm ", col = "purple")
+text(274, max(af2[,3]+0.04), "2 ppm ", col = "purple")
+text(274, max(af2[,4]+0.04), "3 ppm ", col = "purple")
+text(274, max(af2[,5]+0.04), "4 ppm ", col = "purple")
+text(274, max(af2[,6]+0.04), "5 ppm ", col = "purple")
+text(274, max(af2[,7]+0.04), "6 ppm ", col = "purple")
+text(274, max(af2[,8]+0.04), "7 ppm ", col = "purple")
+text(274, max(af2[,9]+0.04), "8 ppm ", col = "purple")
+text(274, max(af2[,10]+0.04), "9 ppm ", col = "purple")
+text(274, max(af2[,11]+0.04), "10 ppm ", col = "purple")
+#abline(v=280, col='green', lwd=3, type='p')
+points(274, max(af2[,2]-af2[81,2]), pch=3, col="red", lwd=3)
+points(274, max(af2[,3]-af2[81,3]), pch=3, col="red", lwd=3)
+points(274, max(af2[,4]-af2[81,4]), pch=3, col="red", lwd=3)
+points(274, max(af2[,5]-af2[81,5]), pch=3, col="red", lwd=3)
+points(274, max(af2[,6]-af2[81,6]), pch=3, col="red", lwd=3)
+points(274, max(af2[,7]-af2[81,7]), pch=3, col="red", lwd=3)
+points(274, max(af2[,8]-af2[81,8]), pch=3, col="red", lwd=3)
+points(274, max(af2[,9]-af2[81,9]), pch=3, col="red", lwd=3)
+points(274, max(af2[,10]-af2[81,10]), pch=3, col="red", lwd=3)
+points(274, max(af2[,11]-af2[81,11]), pch=3, col="red", lwd=3)
+dev.off()
+
+
+                                                  ############################
+			                          ##    5 METIL  FURFURAL   ##
+			                          ############################
+			                          
+
+pdf(file = "espectros_5fppm.pdf", width = 8, height = 10)
+af5 <- read.table("/Users/User/Desktop/MATLAB/5mf.txt", header=FALSE, sep="", na.strings="NA", dec=".", strip.white=TRUE); af5
+plot(af5[,1],af5[,2]-af5[81,2],xaxs="i", xaxp=c(245, 325, 8),ylim=c(0.065,max(af5[,11])),type='l',col="black",xlab="",ylab="", lwd=3,)
+points(af5[,1],af5[,3]-af5[81,3],type='l',col="black", lwd=3)
+points(af5[,1],af5[,4]-af5[81,4],type='l',col="black", lwd=3)
+points(af5[,1],af5[,5]-af5[81,5],type='l',col="black", lwd=3)
+points(af5[,1],af5[,6]-af5[81,6],type='l',col="black", lwd=3)
+points(af5[,1],af5[,7]-af5[81,7],type='l',col="black", lwd=3)
+points(af5[,1],af5[,8]-af5[81,8],type='l',col="black", lwd=3)
+points(af5[,1],af5[,9]-af5[81,9],type='l',col="black", lwd=3)
+points(af5[,1],af5[,10]-af5[81,10],type='l',col="black", lwd=3)
+points(af5[,1],af5[,11]-af5[81,11],type='l',col="black", lwd=3)
+title(main="Concentration Spectra of 5 Metyl-Furfural",xlab="Wavelenght (nm)",ylab="Absortion (ua)",font.main=2,font.lab=2,cex.main=1.5)
+legend(248,1.7, "Concentrations of 5 Metyl-Furfural",  pt.bg = "white", lty = 1, col = "black")
+text(292, max(af5[,2]+0.06), "1 ppm ", col = "purple")
+text(292, max(af5[,3]+0.05), "2 ppm ", col = "purple")
+text(292, max(af5[,4]+0.05), "3 ppm ", col = "purple")
+text(292, max(af5[,5]+0.05), "4 ppm ", col = "purple")
+text(292, max(af5[,6]+0.05), "5 ppm ", col = "purple")
+text(292, max(af5[,7]+0.02), "6 ppm ", col = "purple")
+text(292, max(af5[,8]+0.02), "7 ppm ", col = "purple")
+text(292, max(af5[,9]), "8 ppm ", col = "purple")
+text(292, max(af5[,10]), "9 ppm ", col = "purple")
+text(292, max(af5[,11]), "10 ppm ", col = "purple")
+#abline(v=280, col='blue', lwd=3, type='p')
+points(292, max(af5[,2]-af5[81,2]), pch=3, col="red", lwd=3)
+points(292, max(af5[,3]-af5[81,3]), pch=3, col="red", lwd=3)
+points(292, max(af5[,4]-af5[81,4]), pch=3, col="red", lwd=3)
+points(292, max(af5[,5]-af5[81,5]), pch=3, col="red", lwd=3)
+points(292, max(af5[,6]-af5[81,6]), pch=3, col="red", lwd=3)
+points(292, max(af5[,7]-af5[81,7]), pch=3, col="red", lwd=3)
+points(292, max(af5[,8]-af5[81,8]), pch=3, col="red", lwd=3)
+points(292, max(af5[,9]-af5[81,9]), pch=3, col="red", lwd=3)
+points(292, max(af5[,10]-af5[81,10]), pch=3, col="red", lwd=3)
+points(292, max(af5[,11]-af5[81,11]), pch=3, col="red", lwd=3)
+dev.off()
+
+
+
+
+
